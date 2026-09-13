@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Kanak ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="music-control">
+            <button id="musicToggle" class="music-btn" title="Toggle Music">🔊</button>
+        </div>
+
+        <!-- Opening Screen -->
+        <section id="opening" class="screen active">
+            <div class="opening-content">
+                <div class="opening-text">
+                    <p class="pssst">pssst... 👀</p>
+                    <p class="name-call">Kanak?</p>
+                    <p class="made-something">I made a tiny little something for you...</p>
+                </div>
+                <div id="penguin-opening" class="penguin-container"></div>
+                <button id="openBtn" class="btn btn-primary">open it 🐧❤️</button>
+            </div>
+        </section>
+
+        <!-- Questions Screen -->
+        <section id="questions" class="screen">
+            <div class="questions-content">
+                <div id="penguin-questions" class="penguin-container"></div>
+                <div id="question-box" class="question-box">
+                    <p id="question-text"></p>
+                    <div class="question-buttons">
+                        <button id="yesBtn" class="btn btn-yes">Yes 🎉</button>
+                        <button id="noBtn" class="btn btn-no">No 🤔</button>
+                    </div>
+                </div>
+                <div id="reaction-box" class="reaction-box hidden">
+                    <p id="reaction-text"></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Emotional Section -->
+        <section id="emotional" class="screen">
+            <div class="emotional-content">
+                <div id="penguin-emotional" class="penguin-container"></div>
+                <div id="emotional-text" class="emotional-text">
+                    <p class="emotional-intro">Okay... jokes aside, there's something I actually wanted to tell you.</p>
+                </div>
+                <button id="continueEmotional" class="btn btn-primary">Continue 💙</button>
+            </div>
+        </section>
+
+        <!-- Memories Section -->
+        <section id="memories" class="screen">
+            <div class="memories-content">
+                <h2>Some little memories I never want to forget 📸</h2>
+                <div class="photos-grid">
+                    <div class="photo-card">
+                        <img src="assets/photos/photo1.jpg" alt="Memory 1">
+                        <p class="photo-caption">Photo 1</p>
+                    </div>
+                    <div class="photo-card">
+                        <img src="assets/photos/photo2.jpg" alt="Memory 2">
+                        <p class="photo-caption">Photo 2</p>
+                    </div>
+                    <div class="photo-card">
+                        <img src="assets/photos/photo3.jpg" alt="Memory 3">
+                        <p class="photo-caption">Photo 3</p>
+                    </div>
+                    <div class="photo-card">
+                        <img src="assets/photos/photo4.jpg" alt="Memory 4">
+                        <p class="photo-caption">Photo 4</p>
+                    </div>
+                </div>
+                <button id="continueMemories" class="btn btn-primary">Next 💙</button>
+            </div>
+        </section>
+
+        <!-- Final Questions -->
+        <section id="final-questions" class="screen">
+            <div class="final-questions-content">
+                <div id="penguin-final-q" class="penguin-container"></div>
+                <div id="final-q-box" class="question-box">
+                    <p id="final-q-text">Do you know how much you mean to me?</p>
+                    <div class="question-buttons">
+                        <button id="finalYesBtn" class="btn btn-yes">Yes 💙</button>
+                        <button id="finalNoBtn" class="btn btn-no">No 😭</button>
+                    </div>
+                </div>
+                <div id="final-reaction-box" class="reaction-box hidden">
+                    <p id="final-reaction-text"></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Birthday Reveal -->
+        <section id="birthday-reveal" class="screen">
+            <div class="birthday-reveal-content">
+                <div id="penguin-birthday" class="penguin-container"></div>
+                <div id="birthday-text" class="birthday-text">
+                    <p class="reveal-intro">Kanak...</p>
+                    <p class="reveal-message">Through all the good days, difficult days, laughs, arguments and everything in between...</p>
+                    <h1 class="birthday-glad">I'm really glad it's you.</h1>
+                    <h2 class="birthday-wish">Happy Birthday, Kanak ❤️</h2>
+                </div>
+                <button id="continueBirthday" class="btn btn-primary">Next 🎂</button>
+            </div>
+        </section>
+
+        <!-- Secret Surprise -->
+        <section id="secret-surprise" class="screen">
+            <div class="secret-surprise-content">
+                <div id="penguin-secret" class="penguin-container"></div>
+                <div id="secret-text" class="secret-text">
+                    <p class="secret-pssst">pssst... 👀</p>
+                    <p class="secret-message">We're not done yet.</p>
+                    <p class="secret-evening">There's a little surprise waiting for you this evening...</p>
+                    <p class="secret-hint">But I'm not telling you what it is 😌🐧</p>
+                </div>
+                <button id="secretBtn" class="btn btn-primary">Keep the Secret 🤫</button>
+            </div>
+        </section>
+
+        <!-- Final Screen -->
+        <section id="final-screen" class="screen">
+            <div class="final-screen-content">
+                <div id="penguin-final" class="penguin-container"></div>
+                <div class="final-message">
+                    <h1>Happy Birthday, Kanak ❤️</h1>
+                    <p>I hope this tiny little penguin made you smile.</p>
+                    <p>Now go enjoy your day.</p>
+                    <p class="final-ending">And remember... someone is very, very happy that you're here. 🐧❤️</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Confetti Canvas -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <!-- Audio -->
+    <audio id="bgMusic" preload="auto">
+        <source src="assets/music/birthday.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
